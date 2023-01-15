@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Check assignment requirements",
+      "setup": "",
+      "run": "./mvnw -Dtest=BonusCalculatorTests test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}

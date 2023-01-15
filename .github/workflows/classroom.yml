@@ -1,0 +1,19 @@
+name: GitHub Classroom Workflow
+on: push
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'microsoft' # See 'Supported distributions' for available options
+          java-version: '17'
+      - uses: education/autograding@v1
